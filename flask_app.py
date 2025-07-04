@@ -7,7 +7,7 @@ from video_downloader import InstaVideoDownloader
 app = Flask(__name__)
 
 # ✅ Telegram Bot Setup
-BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "YOUR_BOT_TOKEN_HERE")
+BOT_TOKEN = "7290249545:AAFVUXcenil1Say82dveGmNo-egLiL8PLjE"
 bot = telegram.Bot(token=BOT_TOKEN)
 
 # ✅ Create Dispatcher for handling updates
