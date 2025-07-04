@@ -13,6 +13,9 @@ bot = telegram.Bot(token=BOT_TOKEN)
 # ✅ Create Dispatcher for handling updates
 dispatcher = Dispatcher(bot, None, use_context=True)
 
+os.makedirs("reels", exist_ok=True)  # ✅ Creates 'reels' folder if it doesn't exist
+
+
 # ✅ Instagram Downloader
 downloader = InstaVideoDownloader()
 
