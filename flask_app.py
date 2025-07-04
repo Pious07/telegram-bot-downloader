@@ -27,6 +27,15 @@ def respond():
     dispatcher.process_update(update)
     return 'OK'
 
+
+@app.route("/files")
+def list_files():
+    try:
+        files = os.listdir("reels")
+        return "<br>".join(files) if files else "📁 No files in Reels"
+    except Exception as e:
+        return f"❌ Error accessing Reels folder: {e}"
+
 # ✅ Handle text messages (e.g., Instagram Reel links)
 def handle_message(update, context):
     text = update.message.text
