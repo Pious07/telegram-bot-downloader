@@ -1,0 +1,6 @@
+Flask
+yt-dlp
+moviepy
+opencv-python
+numpy
+python-telegram-bot==13.15
